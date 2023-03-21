@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Selling Price</title>
+</head>
+<body>
+    <form action="/predict" method="post" >
+        <div>
+        <h1 style="color: rgb(240, 13, 13); text-align: center;">
+            Car Selling Price
+        </h1>
+        <h2 style="text-align: center; color:rgb(0, 85, 255)">
+            Please Fill the Fields for the Prediction of Car Selling Price
+        </h2>
+        <p style="text-align: center;">
+            Here you will see the prediction of the car selling price which will show after the filling all the fields.
+        </p>
+        <br>
+        <div>
+        <label for="kms_driven">KMS Driven</label>
+        <input type="text" id="kms_driven" name="Kms_Driven">
+        &emsp; &emsp; &emsp; &emsp; 
+        <label for="cars_name" > Cars </label>
+        <select name="Cars_Names" id="cars_name">
+            <option value="Brio"> Brio</option>
+            <option value="Riaz"> Riaz</option>
+            <option value="City">City</option>
+            <option value="Corolla_Altis">Corolla Altis</option>
+            <option value="Fortuner">Fortuner</option>
+            <option value="Grand_i10">Grand i10</option>
+            <option value="i20"> i20</option>
+            <option value="Innova">Innova</option>
+            <option value="Verna">Verna</option>
+        </select>
+        <br>
+        <br>
+        
+            <label for="number_of_years">Number of Years </label>
+            <input type="text" id="number_of_years" name="Number_Of_Year">
+            &emsp; &emsp; &emsp; &emsp; &emsp;
+        <label for="fuel_type" > Fuel Type</label>
+        <select id="fuel_type" name="Fuel_Type">
+            <option value="Diesel">Deisel</option>
+            <option value="Petrol">Petrol</option>
+        </select>
+        <br>
+        <br>
+        <label for="seller_type" >Seller Type</label>
+        <select id="seller_type" name="Seller_Type">
+            <option value="Dealer">Dealer</option>
+            <option value="Individual">Individual</option>
+        </select>
+        &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp; &emsp; &emsp; 
+        <label for="transmission">Transmission</label>
+        <select id="transmission" name="Transmission">
+            <option value="Automatic">Automatic</option>
+            <option value="Manual">Manual</option>
+        </select>
+        <br>
+        <br>
+        <label style="color:rgb(63, 40, 5)" for="submit">Press Submit for the Prediction </label>
+        <input style="color:brown; text-align:center;" type="submit" id="submit" name="predict">
+    </form>
+</body>
+</html>
